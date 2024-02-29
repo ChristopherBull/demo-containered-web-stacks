@@ -1,0 +1,33 @@
+{
+  "name": "demo-containered-web-stacks",
+  "version": "1.0.0",
+  "description": "A repository of example web stacks demonstrated with Docker Compose. This project file contains developer dependencies (e.g., linting/spelling) for the repository, not for individual examples. Examples are hosted in their own isolated sub-folder.",
+  "scripts": {
+    "lint": "npm run lint-md && npm run lint-src",
+    "lint-md": "markdownlint-cli2 \"**/*.md\" \"!**/node_modules\"",
+    "lint-src": "eslint \"**/*.{js,yaml,yml}\"",
+    "spell": "cspell .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherBull/demo-containered-web-stacks.git"
+  },
+  "author": "Christopher Bull",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ChristopherBull/demo-containered-web-stacks/issues"
+  },
+  "homepage": "https://github.com/ChristopherBull/demo-containered-web-stacks#readme",
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.5.4",
+    "cspell": "^8.3.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.0.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-yml": "^1.12.2",
+    "markdownlint-cli2": "^0.12.1"
+  }
+}
