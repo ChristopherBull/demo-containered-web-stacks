@@ -1,6 +1,6 @@
 # Docker-Compose Basics
 
-The [docker-compose.yml file](./docker-compose.yml) in this folder demonstrates basic docker compose functionality. It is a simple example that downloads a lightweight pre-configured image (called "[Busybox](https://en.wikipedia.org/wiki/BusyBox)") and then uses `echo` to print a sentence to the terminal. No code is required.
+The [docker-compose.yml file](./docker-compose.yml) in this folder demonstrates basic Docker Compose functionality. It is a simple example that downloads a lightweight pre-configured image (called "[Busybox](https://en.wikipedia.org/wiki/BusyBox)") and then uses `echo` to print a sentence to the terminal. No code is required.
 
 You can use this file to test that Docker is correctly installed in your development environment by navigating to this folder and then running `docker compose up` in your terminal. You should get output that looks similar to this the first time you run this:
 
