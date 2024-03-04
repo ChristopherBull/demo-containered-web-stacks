@@ -1,0 +1,10 @@
+name: example_node_app
+
+services:
+  app:
+    # Specifies the image name, so Docker Hub can remember it.
+    image: example/node-app
+    # Build the `example/node-app` image from the current directory
+    # (where the `Dockerfile` is located).
+    build: .
+    
