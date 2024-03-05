@@ -12,6 +12,9 @@
         "plugin:jsdoc/recommended",
         "plugin:yml/standard"
     ],
+    "ignorePatterns": [
+        "**/node_modules/*"
+    ],
     "parserOptions": {
         "ecmaVersion": "latest"
     },

@@ -1,0 +1,12 @@
+name: example_express_node_app
+
+services:
+  app:
+    # Specifies the image name, so Docker Hub can remember it.
+    image: example/express-node-app
+    # Build the `example/node-app` image from the current directory
+    # (where the `Dockerfile` is located).
+    build: .
+    # Expose the port 3000 on the container and bind it to the hosts port 3000.
+    ports:
+      - "3000:3000"

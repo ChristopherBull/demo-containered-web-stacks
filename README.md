@@ -6,8 +6,10 @@ Example web stacks that are containerised. This repository uses Docker and Compo
 
 This repository has the following demos:
 
-- [Basic Docker Compose](./docker-compose%20basics/) -- Test your Docker installation.
-- [Basic Dockerfile and Docker Compose](./dockerfile-compose%20basics/) -- Build and run one simple container image.
+- [Basic Docker Compose](./docker-compose%20basics/) — Test your Docker installation.
+- [Basic Dockerfile and Docker Compose](./dockerfile-compose%20basics/) — Build and run one simple container image.
+
+Each demo builds upon the previous one.
 
 ## What is "Docker Compose"?
 
