@@ -1,15 +1,13 @@
 # Demo: Containerised Web Stacks
 
-Example web stacks that are containerised. This repository uses Docker and Compose to build and manage its containers.
+Example web stacks that are containerised. This repository uses Docker and Compose to build and manage its containers. This repository has the following demos:
 
-## Demonstrations
-
-This repository has the following demos:
-
-- [Basic Docker Compose](./docker-compose%20basics/) — Test your Docker installation.
-- [Basic Dockerfile and Docker Compose](./dockerfile-compose%20basics/) — Build and run one simple container image.
-- [Basic Node+Express Web App with Docker Compose](./express-node%20Hello%20World/) — Build and run a basic web application, showing container isolation.
-- [MongoDB-Express-Node Web Stack with Docker Compose](./mongo-express-node%20stack/) — An example of a web stack with multiple containers.
+Demo | Description
+---|---
+[Docker Compose](./docker-compose%20basics/) | Test your Docker installation with a basic Docker Compose example.
+[Dockerfile and Docker Compose](./dockerfile-compose%20basics/) | Build a container image of a simple app and run the container image.
+[Container Isolation and Docker Compose](./express-node%20Hello%20World/) | Build a basic NodeJS and ExpressJS web application and view the web response in a web browser, demonstrating container isolation.
+[Docker Compose and Multiple Containers (Mongo-Express-Node web stack)](./mongo-express-node%20stack/) | Build a web application (NodeJS and ExpressJS) in a container which communicates with a database (Mongo) in another container. This demonstrates the basic principles involved in containerising web stacks.
 
 Each demo builds upon the previous one.
 
