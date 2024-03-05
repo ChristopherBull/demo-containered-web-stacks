@@ -8,6 +8,7 @@ This repository has the following demos:
 
 - [Basic Docker Compose](./docker-compose%20basics/) — Test your Docker installation.
 - [Basic Dockerfile and Docker Compose](./dockerfile-compose%20basics/) — Build and run one simple container image.
+- [Basic Node+Express Web App with Docker Compose](./express-node%20Hello%20World/) — Build and run a basic web application, showing container isolation.
 
 Each demo builds upon the previous one.
 
