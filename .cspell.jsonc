@@ -28,6 +28,7 @@
     ],
     "words": [
         // Common words
+        "MERN",
         "myapp",
         // Dockerfile words in documentation
         "WORKDIR"

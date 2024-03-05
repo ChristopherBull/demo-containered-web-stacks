@@ -1,0 +1,21 @@
+name: example_mongo_express_node_app
+
+services:
+  app:
+    # Specifies the image name, so Docker Hub can remember it.
+    image: example/mongo-express-node-app
+    # Build the `example/node-app` image from the current directory
+    # (where the `Dockerfile` is located).
+    build: .
+    # Expose the port 3000 on the container and bind it to the hosts port 3000.
+    ports:
+      - "3000:3000"
+    # Make the `app` service depend on (wait for) the `db` service.
+    depends_on:
+      - db
+  db:
+    image: mongo:7.0
+    # Expose the port 27017 on the container and bind it to the hosts port 27017.
+    # This ensures that the `app` service can access the `db` service. 
+    ports:
+      - "27017:27017"
