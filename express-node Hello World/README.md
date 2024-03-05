@@ -1,4 +1,4 @@
-# Dockerfile and Docker-Compose Basics
+# Container Isolation and Docker-Compose
 
 This example demonstrates how containers are isolated from the system it is running on and how you can expose the web application in this demo so it can be viewed in a web browser.
 
