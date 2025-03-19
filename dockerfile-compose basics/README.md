@@ -9,3 +9,20 @@ The [Dockerfile](./Dockerfile) defines the execution environment of the app and 
 As this example is a simple application, the Dockerfile only needs to copy the source code file `app.js` when building the Docker image. It is worth noting that, as JavaScript is an interpreted language, we copy the source files directly. If you write a Java application, for example, you would copy all of the compiled files into the Docker image.
 
 Now run `docker compose up` in your terminal to see the application be built and run as a container.
+
+## Build Dockerfile only
+
+Suppose you wish to build a Dockerfile directly (i.e., without Docker-Compose). In that case, you should use the docker build terminal command `docker build -t <name>:<tag> <path>`. `-t <name>:<tag>` gives it a name you specify, making it easier to locate the built image later. For example:
+
+```zsh
+docker build -t myapp:latest .
+```
+
+Now the Docker image is built, you can run it as a Docker Container with the following command:
+
+```zsh
+docker run myapp:latest
+```
+
+> [!TIP]
+> Use `-d` to run a container in detached mode (i.e., run in the background): `docker run -d myapp:latest`
